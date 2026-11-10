@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-persian: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+    --font-editorial: 'Fraunces', Georgia, serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+
+  html {
+    font-family: var(--font-persian);
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-persian {
+  font-family: var(--font-persian);
+}
+
+.font-editorial {
+  font-family: var(--font-editorial);
+}
+
+.font-mono-tech {
+  font-family: var(--font-mono);
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.tech-term {
+  font-family: var(--font-mono);
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+  font-size: 0.86em;
+  line-height: 1.35;
+  padding: 0.08rem 0.38rem;
+  margin: 0 0.14rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+}
+
+.tabular-nums-ltr {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "نشر رشته‌ها — راهنمای تعاملی Swift Concurrency",
+  "description": "کتاب‌تعاملی و شبیه‌ساز بصری آموزش مدرن Swift Concurrency، Async/Await، Structured Concurrency، Actors و Sendable به زبان فارسی با ترمینولوژی دقیق فنی.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
