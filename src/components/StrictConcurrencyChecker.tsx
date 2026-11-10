@@ -443,8 +443,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "npm"
-      - run: npm ci
+      - run: npm install --legacy-peer-deps
       - run: npx vite build --base="/\${{ github.event.repository.name }}/"
       - uses: actions/upload-pages-artifact@v3
         with:

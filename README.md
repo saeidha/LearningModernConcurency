@@ -96,10 +96,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "npm"
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install --legacy-peer-deps
 
       - name: Build static site with dynamic repository base path
         run: npx vite build --base="/${{ github.event.repository.name }}/"
